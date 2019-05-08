@@ -29,6 +29,7 @@ class Decorator implements Component{
 
     @Override
     public void sampleOperation() {
+        System.out.println("傻逼");
         // 委派给构件
         component.sampleOperation();
     }
@@ -39,6 +40,7 @@ class ConcreteDecoratorA extends Decorator {
     public ConcreteDecoratorA(Component component) {
         super(component);
     }
+
     @Override
     public void sampleOperation() {
         // 写相关的业务代码
