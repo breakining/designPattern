@@ -5,7 +5,7 @@ package cn.ghw.factory.pojo;
  * @Date: 2019/5/6 22:50
  * @Description:
  */
-public class Cat implements Animal{
+public class Cat implements Animal {
 
     @Override
     public void eat() {
