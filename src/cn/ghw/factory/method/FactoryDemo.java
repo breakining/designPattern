@@ -1,4 +1,4 @@
-package cn.ghw.factory.standard;
+package cn.ghw.factory.method;
 
 import cn.ghw.factory.pojo.Animal;
 

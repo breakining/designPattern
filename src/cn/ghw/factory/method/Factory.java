@@ -1,4 +1,4 @@
-package cn.ghw.factory.standard;
+package cn.ghw.factory.method;
 
 import cn.ghw.factory.pojo.Animal;
 
@@ -9,5 +9,5 @@ import cn.ghw.factory.pojo.Animal;
  */
 public interface Factory {
 
-    public abstract  Animal createAnimal();
+    Animal createAnimal();
 }
