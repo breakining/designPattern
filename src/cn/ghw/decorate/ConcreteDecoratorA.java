@@ -1,4 +1,4 @@
-package cn.ghw.zsz;
+package cn.ghw.decorate;
 
 /**
  * @Author: ghwei
