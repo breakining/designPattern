@@ -13,6 +13,10 @@ interface Component {
 
 class ConcreteComponent implements Component {
 
+    public ConcreteComponent(){
+        System.out.println("ConcreteComponent构造方法");
+    }
+
     @Override
     public void sampleOperation() {
         // 写相关的业务代码
