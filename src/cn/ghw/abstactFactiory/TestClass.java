@@ -19,7 +19,5 @@ public class TestClass {
         cat.eat();
         dog = af2.getDog();
         dog.eat();
-
-
     }
 }
