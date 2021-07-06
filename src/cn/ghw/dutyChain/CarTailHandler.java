@@ -9,7 +9,7 @@ public class CarTailHandler extends Handler {
     @Override
     public void productCar() {
         System.out.println("生产车尾");
-        if(null != super.carHandler){
+        if (null != super.carHandler) {
             super.carHandler.productCar();
         }
     }

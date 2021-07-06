@@ -17,7 +17,7 @@ public class MyHandler implements InvocationHandler {
     }
 
     @Override
-    public Object invoke(Object proxy, Method method, Object[] args){
+    public Object invoke(Object proxy, Method method, Object[] args) {
         Object result = null;
         this.deCount();
         try {
@@ -29,10 +29,11 @@ public class MyHandler implements InvocationHandler {
         return result;
     }
 
-    private void send(){
+    private void send() {
         System.out.println("赠送");
     }
-    private void deCount(){
+
+    private void deCount() {
         System.out.println("打折");
     }
 }

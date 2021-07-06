@@ -12,7 +12,7 @@ public class Mainclass {
     public static void main(String[] args) {
         MyHandler myHandler = new MyHandler();
         myHandler.setRealSubject(new RealSubject());
-        Subject subject = (Subject)Proxy.newProxyInstance(RealSubject.class.getClassLoader(), RealSubject.class.getInterfaces(), myHandler);
+        Subject subject = (Subject) Proxy.newProxyInstance(RealSubject.class.getClassLoader(), RealSubject.class.getInterfaces(), myHandler);
         subject.sailBook();
     }
 }

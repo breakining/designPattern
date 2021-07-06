@@ -11,11 +11,11 @@ import java.util.List;
 public class MainClass {
     public static void main(String[] args) {
         List bookList = new SelfList<Book>();
-        bookList.add(new Book("123","laosu",45.34));
-        bookList.add(new Book("345","yutu",45.20));
+        bookList.add(new Book("123", "laosu", 45.34));
+        bookList.add(new Book("345", "yutu", 45.20));
 
         Iterator<Book> iterator = bookList.iterator();
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
 

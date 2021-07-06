@@ -1,15 +1,12 @@
 package cn.ghw.memento;
 
-import org.junit.Test;
-
 /**
  * @Author: ghwei
  * @Date: 2019/5/19 19:25
  * @Description:
  */
 public class MainClass {
-    @Test
-    public void test1(){
+    public void test1() {
         Person person = new Person("lifeng", "男", 24);
         System.out.println(person.hashCode());
         //创建备忘录
@@ -22,8 +19,7 @@ public class MainClass {
         System.out.println(person.hashCode());
     }
 
-    @Test
-    public void test2(){
+    public void test2() {
         Person person = new Person("lifeng", "男", 24);
         System.out.println(person);
         //创建备忘录

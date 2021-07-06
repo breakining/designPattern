@@ -13,7 +13,7 @@ interface Component {
 
 class ConcreteComponent implements Component {
 
-    public ConcreteComponent(){
+    public ConcreteComponent() {
         System.out.println("ConcreteComponent构造方法");
     }
 
@@ -24,10 +24,10 @@ class ConcreteComponent implements Component {
     }
 }
 
-class Decorator implements Component{
+class Decorator implements Component {
     private Component component;
 
-    public Decorator(Component component){
+    public Decorator(Component component) {
         this.component = component;
     }
 
@@ -55,7 +55,7 @@ class ConcreteDecoratorA extends Decorator {
     }
 }
 
-class Test2{
+class Test2 {
     public static void main(String[] args) {
         ConcreteDecoratorA concreteDecoratorA = new ConcreteDecoratorA(new Decorator(new ConcreteComponent()));
         concreteDecoratorA.sampleOperation();

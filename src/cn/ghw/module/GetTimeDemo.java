@@ -16,15 +16,15 @@ public class GetTimeDemo extends GetTime {
             bis = new BufferedInputStream(new FileInputStream("F:\\ksdler\\迅雷官方精简版1.5.3.288.exe"));
             bos = new BufferedOutputStream(new FileOutputStream("D:\\迅雷官方精简版1.5.3.288.exe"));
             int len = 0;
-            byte [] arr = new byte[1024];
-            while((len = bis.read(arr)) != -1){
-                bos.write(arr,0,len);
+            byte[] arr = new byte[1024];
+            while ((len = bis.read(arr)) != -1) {
+                bos.write(arr, 0, len);
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try {
                 bis.close();
                 bos.close();

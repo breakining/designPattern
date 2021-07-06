@@ -21,10 +21,11 @@ public class ProxySubject implements Subject {
         this.send();
     }
 
-    private void send(){
+    private void send() {
         System.out.println("赠送");
     }
-    private void deCount(){
+
+    private void deCount() {
         System.out.println("打折");
     }
 }

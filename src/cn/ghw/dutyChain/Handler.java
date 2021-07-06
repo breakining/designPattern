@@ -9,7 +9,7 @@ public abstract class Handler {
 
     protected Handler carHandler;
 
-    public Handler setNextHandler(Handler carHandler){
+    public Handler setNextHandler(Handler carHandler) {
         this.carHandler = carHandler;
         return carHandler;
     }

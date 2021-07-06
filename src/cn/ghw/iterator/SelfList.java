@@ -8,17 +8,17 @@ import java.util.Iterator;
  * @Date: 2019/5/19 21:07
  * @Description:
  */
-public class SelfList<E> extends AbstractList<E>{
+public class SelfList<E> extends AbstractList<E> {
 
-    private E [] lists;
+    private E[] lists;
 
     // 纪录遍历的角标
     private int index;
 
-    private transient E [] tempLists;
+    private transient E[] tempLists;
 
     @Override
-    public Iterator<E> iterator(){
+    public Iterator<E> iterator() {
         return new Ite<E>();
     }
 
@@ -26,14 +26,15 @@ public class SelfList<E> extends AbstractList<E>{
     public int size() {
         return lists.length;
     }
+
     @Override
-    public boolean add(E e){
-        if(null == lists){
-            lists  = (E [])new Object [1];
+    public boolean add(E e) {
+        if (null == lists) {
+            lists = (E[]) new Object[1];
             lists[0] = e;
-        }else{
+        } else {
             //创建一个细新的数组，将原先的数据放进去
-            tempLists = (E [])new Object [lists.length + 1];
+            tempLists = (E[]) new Object[lists.length + 1];
             for (int i = 0; i < lists.length; i++) {
                 tempLists[i] = lists[i];
             }
@@ -43,16 +44,17 @@ public class SelfList<E> extends AbstractList<E>{
         }
         return true;
     }
+
     @Override
     public E get(int index) {
         return lists[index];
     }
 
-    private class Ite<E> implements Iterator{
+    private class Ite<E> implements Iterator {
 
         @Override
         public boolean hasNext() {
-            if(index >= lists.length){
+            if (index >= lists.length) {
                 return false;
             }
             return true;

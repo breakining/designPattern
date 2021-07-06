@@ -6,7 +6,7 @@ package cn.ghw;
  * @Description:
  */
 public enum Test1 {
-    toDoMail("a",1),chartMail("b",2), reportMail("c",3);
+    toDoMail("a", 1), chartMail("b", 2), reportMail("c", 3);
 
     private String tempAddr;
     private int tempAdds;
@@ -18,10 +18,11 @@ public enum Test1 {
         this.tempAdds = tempAdds;
     }
 
-    public String getTempAddr(){
+    public String getTempAddr() {
         return this.tempAddr;
     }
-    public int getTempAdds(){
+
+    public int getTempAdds() {
         return this.tempAdds;
     }
 }

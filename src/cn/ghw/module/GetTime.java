@@ -7,7 +7,7 @@ package cn.ghw.module;
  */
 public abstract class GetTime {
 
-    public long getTime (){
+    public long getTime() {
         long startTime = System.currentTimeMillis();
         code();
         long endTime = System.currentTimeMillis();

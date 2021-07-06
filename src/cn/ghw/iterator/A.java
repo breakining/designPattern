@@ -9,8 +9,8 @@ public class A<T> {
 
     private T[] arr;
 
-    public A(int capacity){
-        arr = (T[])new Object[capacity];
+    public A(int capacity) {
+        arr = (T[]) new Object[capacity];
         System.out.println("End");
     }
 }

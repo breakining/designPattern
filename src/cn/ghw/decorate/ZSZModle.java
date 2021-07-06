@@ -5,12 +5,12 @@ package cn.ghw.decorate;
  * @Date: 2019/5/3 15:12
  * @Description:装饰者模式
  */
-interface Animal{
+interface Animal {
 
     void eat();
 }
 
-class Tiger implements Animal{
+class Tiger implements Animal {
 
     @Override
     public void eat() {
@@ -20,9 +20,11 @@ class Tiger implements Animal{
 
 class TiggerSuper implements Animal {
     Animal animal;
-    public  TiggerSuper(Animal animal){
+
+    public TiggerSuper(Animal animal) {
         this.animal = animal;
     }
+
     @Override
     public void eat() {
         System.out.println("老虎吃狼2");

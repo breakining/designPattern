@@ -39,23 +39,27 @@ public class Person {
     public void setAge(int age) {
         this.age = age;
     }
+
     //1或者2
-    public PersonMemento setMemento(){
-        return new PersonMemento(name,sex,age);
+    public PersonMemento setMemento() {
+        return new PersonMemento(name, sex, age);
     }
+
     //1或者2
-    public Caretaker setCaretaker(){
-        return new Caretaker().setPersonMemento(new PersonMemento(name,sex,age));
+    public Caretaker setCaretaker() {
+        return new Caretaker().setPersonMemento(new PersonMemento(name, sex, age));
     }
+
     //3或者4
-    public Person getMemento(PersonMemento personMemento){
+    public Person getMemento(PersonMemento personMemento) {
         this.name = personMemento.getName();
         this.sex = personMemento.getSex();
         this.age = personMemento.getAge();
         return this;
     }
+
     //3或者4
-    public Person getMemento(Caretaker caretaker){
+    public Person getMemento(Caretaker caretaker) {
         this.name = caretaker.getPersonMemento().getName();
         this.sex = caretaker.getPersonMemento().getSex();
         this.age = caretaker.getPersonMemento().getAge();
